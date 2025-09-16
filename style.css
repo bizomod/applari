@@ -1,0 +1,51 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Intro inicial */
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 2s ease forwards;
+  animation-delay: 2s;
+  z-index: 9999;
+}
+
+#intro img {
+  width: 150px;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+#intro h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Animações */
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Mapa */
+#map {
+  width: 100%;
+  height: 100vh;
+}
